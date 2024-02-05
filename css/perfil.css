@@ -1,0 +1,396 @@
+/*START GENERAL CSS FOR BACKEND*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@400;500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body{
+background-color:#f8f5f5;
+font-family: 'Roboto', sans-serif;
+}
+
+a {
+
+  text-decoration: none;
+  
+}
+/* header{
+  margin-top: -200px;
+} */
+
+.save-settings:hover {
+  cursor: pointer;
+}
+
+.body-content {
+  height: auto;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0px 5px;
+}
+
+
+
+.body-root {
+  min-height: 72.3vh;
+}
+.body-section {
+  padding: 65px 0px;
+}
+.body-content {
+  display: flex;
+}
+.sidebar {
+  width: 27%;
+  min-width: 180px;
+  height: auto;
+  
+}
+
+.main {
+  width: 73%;
+  height: auto;
+}
+.sidebar-menu {
+display: flex;
+flex-direction: column;
+
+}
+
+
+.sidebar-menu .menu-item {
+color: #414141;
+font-size: 1em;
+font-weight: 700;
+text-transform: uppercase;
+width: auto;
+max-width: 220px;
+margin-bottom: 18px;
+display: flex;
+align-items: center;
+}
+.sidebar-menu .menu-icon {
+font-size: 1.2em;
+text-align: center;
+width: 35px;
+margin-right: 12px;
+}
+.main-container {
+background: #ffffff;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px;
+padding: 25px 20px;
+margin-bottom: 15px;
+height: 90%;
+}
+
+.parte2{
+  margin-left: 50%;
+}
+
+.active, .accordion:hover {
+  background-color: #bbbdbb;
+  padding: 7px  9px;
+  border-radius: 5px;
+}
+
+.separar{
+  padding: 8px;
+}
+
+
+
+/* voltar ------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*inputs -----------------------------------------------------------------*/
+
+label {
+  display: block;
+  font-size: 0.9em;
+  padding-bottom: 5px;
+}
+.input,
+textarea,
+select {
+  font-size: 0.9em;
+  width: 100%;
+  margin: 0;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, .12);
+
+}
+
+.input,
+select {
+  height: 40px;
+}
+.input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.form-field {
+  margin-bottom: 14px;
+}
+
+.form-field.medium .input,
+.form-field.medium select,
+.form-field.medium textarea {
+  max-width: 450px;
+}
+
+.input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+.form-field.checkbox {
+  display: flex;
+}
+.form-field.checkbox label {
+  padding: 1px 0px 0px 3px;
+}
+
+
+/*botoes---------------------------------------------------------------------------*/
+.save-settings {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin: 0px;
+  color: #fff;
+background-color: #33df74; 
+  border: 1px solid rgba(9, 252, 62, 0.12);
+  border-radius: 20px;
+
+}
+
+
+.save-settings2 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin: 0px;
+  color: #fff;
+background-color: #df3333; 
+  border: 1px solid rgba(9, 252, 62, 0.12);
+  border-radius: 20px;
+
+}
+
+.save-settings3 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin: 0px;
+  color: #fff;
+background-color: #6388d1; 
+  border: 1px solid rgba(9, 252, 62, 0.12);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+.new-post-actions,
+.edit-post-actions {
+  display: flex;
+  margin-top: 25px;
+}
+.new-post-actions .save-settings,
+.edit-post-actions .save-settings {
+  font-size: 0.9em;
+  height: 40px;
+  padding: 5px 15px;
+  margin-right: 6px;
+}
+.settings-actions {
+  margin-top: 25px;
+}
+.settings-actions .save-settings {
+  font-size: 0.9em;
+  height: 40px;
+  padding: 5px 15px;
+}
+
+
+/*separaçaõ do perfil com formulario -------------------------------------------------------------------------------*/
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-image {
+  width: 30%;
+  text-align: center;
+}
+.profile-details {
+  width: 60%;
+}
+.profile-details form div {
+  margin-bottom: 10px;
+}
+.profile-details form label {
+  display: block;
+}
+.profile-details form input {
+  width: 100%;
+  padding: 5px;
+}
+
+/* CSS */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .linha {
+    display: none; /* Oculta o <hr> */
+  }
+}
+
+/* Estilos para telas menores (mobile) */
+@media screen and (max-width: 767px) {
+  .linha {
+    display: block; /* Exibe o <hr> */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+
+body{
+  background-color:#ffffff;
+}
+   .body-root {
+          min-height: 74.5vh;
+        }
+       
+        .body-content {
+          flex-direction: column;
+        }
+        .sidebar {
+          width: 100%;
+        }
+        .main {
+          width: 100%;
+        }
+        .sidebar-menu {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding-bottom: 2px;
+        }
+        .sidebar-menu .menu-item {
+          width: 305px;
+          margin-bottom: 15px;
+          margin: 10px 5px;
+        }
+        .sidebar-menu .menu-icon {
+          margin-right: 6px;
+        }
+        .main-container {
+          padding: 15px 25px;
+          margin: 0px -16px 15px;
+          border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar {
+         color: #ffffff;
+        }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .body-root {
+    min-height: 3.5vh;
+  }
+ 
+  .body-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .sidebar-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2px;
+  }
+  .sidebar-menu .menu-item {
+    width: 305px;
+    margin-bottom: 15px;
+    margin: 10px 5px;
+  }
+  .sidebar-menu .menu-icon {
+    margin-right: 6px;
+  }
+  .main-container {
+    padding: 90px 67px;
+    margin: 0px -16px 15px;
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar {
+   color: #ffffff;
+  }
+
+  .menu {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .profile {
+      flex-direction: column;
+  }
+  .profile-image, .profile-details {
+      width: 100%;
+  }
+}
+
+
+input{
+  display: block;
+}
+
+
+
+
+
+
+

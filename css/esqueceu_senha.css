@@ -1,0 +1,205 @@
+/*FONTER*/
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+
+.form-l-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    /* margin-top: -15%; */
+} 
+
+.form-l-c p{
+    margin-top: 20%;
+    text-align: center;
+    margin-bottom: -5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.form-l-c a{
+    color:#138d46;
+}
+
+.fundo{
+    background: black;
+}
+
+
+form{
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin: 0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    width: 20%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+input[type="email"],[type="password"] {
+    border-color: #01fd6a;
+    width: 100%;
+    height: 40px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 15px;
+
+}
+
+
+input[type="email"],[type="password"]:focus{
+    /* border-left: none;
+    border-right: none;
+    border-top: none; */
+    outline: none;
+    
+    
+}
+
+input[type="submit"] {
+    margin-top: 10%;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border-color :#138d46;
+    font-weight: bold;
+    color: #138d46;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: #138d46;
+    border: none;
+    color: white;
+}
+
+h3{
+    margin-bottom: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+}
+
+.error-message{
+    position: absolute;
+    background: none;
+    top: 30%;
+    left: 37%;
+    width: 22%;
+    text-align: center;
+    height: 50px;
+    border-radius: 5px;
+    animation: shake 0.5s;
+    cursor: default;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    border: red 2px solid;
+    border-left: 50px red solid;
+    font-weight: bold;
+}
+
+.sucesso-message1{
+    position: absolute;
+    background: none;
+    top: 30%;
+    left: 37%;
+    width: 22%;
+    text-align: center;
+    height: 72px;
+    border-radius: 5px;
+    animation: shake 0.5s;
+    cursor: default;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    border: green 2px solid;
+    border-left: 50px green solid;
+    font-weight: bold;
+}
+
+/* Define a animação de tremor */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+
+.voltar{
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    z-index: 5;
+    background: white;
+    padding: 150px;
+    backdrop-filter: blur(10px);
+    font-weight:900;
+    font-size: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.voltar a{
+    color: #13b8bb;
+}
+
+.voltar img{
+    width: 20%;
+    border-radius: 75px;
+    margin-left: 22%;
+    position: absolute;
+    margin-top: -10%;
+
+}
+
+.voltar p{
+    margin-top: 20%;
+    margin-bottom: -10%;
+}
+
+/* Adapta o formulário para tablets (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    form {
+        width: 70%; /* Ajusta a largura do formulário para ocupar 70% da tela em tablets */
+    }
+    h3{
+        font-size: 25px;
+    }
+    
+    input{
+        font-size: 20px;
+    }
+
+    input[type="email"] {
+        font-size: 20px;
+    }
+
+    .form-l-c p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* Adapta o formulário para telas menores, incluindo tablets (767px ou menos) */
+@media screen and (max-width: 767px) {
+    form {
+        width: 90%; /* Ajusta a largura do formulário para ocupar 90% da tela em telas menores */
+    }
+}

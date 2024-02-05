@@ -1,0 +1,73 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.container-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+table{
+    border-spacing: 0.2em;
+    border-collapse: separate;
+    font-size: 1.4em;
+    width: 30%;
+    font-family: 'Oswald', sans-serif;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #676767;
+    color: white;
+}
+
+thead th {
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+    
+}
+
+td {
+    padding: 0.3em;
+}
+
+tr:nth-child(2n) {
+    background-color: #e3e3e3;
+}
+
+tr{
+    text-align: center;
+}
+
+#titulo{
+    height: 70px;
+    background-color: #13B8BB;
+    font-size: 30px;
+}
+
+
+
+/* Adicione essas regras de estilo para tornar a tabela responsiva */
+
+@media screen and (max-width: 767px) {
+    .container-table {
+        overflow-x: auto; /* Adiciona uma barra de rolagem horizontal em telas pequenas */
+    }
+
+    table {
+        width: 100%; /* Ajusta a largura para ocupar 100% da tela em telas pequenas */
+    }
+
+    caption {
+        padding: 10px; /* Adiciona algum espaço interno ao caption */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    table {
+        width: 80%; /* Ajusta a largura da tabela para tablets */
+    }
+}

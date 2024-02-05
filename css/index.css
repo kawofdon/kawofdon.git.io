@@ -1,0 +1,279 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    margin: 0;
+    
+  }
+
+  #header {
+    position: relative;
+    height: 117.7vh;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    overflow: hidden;
+  }
+
+  .image-container.show {
+    opacity: 1;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de sobreposição com pouca opacidade */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+  }
+
+  .p1 {
+   white-space: nowrap;
+   font-size: 70%;
+   font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+   .p1, #message h3 {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário para diminuir o espaçamento */
+    }
+
+  #message h3{
+    font-size: 190%;
+    Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+ .line-above {
+  border-top: 8px solid rgb(0, 157, 255); /* Aumentando a espessura da linha para 3px */
+  width: 12%;
+  margin-left: 44%;
+  }
+
+.e{
+  color: rgb(0, 157, 255);
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  font-weight: bold; /* Adicionando negrito à palavra "EDMS" */
+}
+
+
+
+.arrow-down {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; /* Espaçamento entre o conteúdo e a seta */
+ 
+}
+
+.arrow-down p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 42%;
+}
+
+.seta img {
+  width: 30px; /* Defina o tamanho desejado para a seta */
+  height: auto; /* Mantenha a proporção original da imagem */
+}
+ 
+.steps {
+  font-family: sans-serif;
+  font-size: 300%;
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.step {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.step img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  margin: 0;
+}
+
+/* Estilos adicionais para centralizar o texto dentro dos passos */
+.step h3 {
+  margin: 0;
+}
+
+
+
+
+/*TABELA*/
+.container-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+table{
+  border-spacing: 0.2em;
+  border-collapse: separate;
+  font-size: 1.4em;
+  width: 30%;
+  font-family: 'Oswald', sans-serif;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #676767;
+  color: white;
+}
+
+thead th {
+  font-weight: bold;
+  padding: 0.3em 1em;
+  text-align: center;
+  
+}
+
+td {
+  padding: 0.3em;
+}
+
+tr:nth-child(2n) {
+  background-color: #e3e3e3;
+}
+
+tr{
+  text-align: center;
+}
+
+#titulo{
+  height: 70px;
+  background-color: #13B8BB;
+  font-size: 30px;
+}
+
+
+.video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  margin: 0;
+   
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
+/* Adicione essas regras de estilo para tornar a tabela responsiva */
+
+@media screen and (max-width: 767px) {
+  .container-table {
+      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal em telas pequenas */
+  }
+
+  table {
+      width: 100%; /* Ajusta a largura para ocupar 100% da tela em telas pequenas */
+  }
+
+  caption {
+      padding: 10px; /* Adiciona algum espaço interno ao caption */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-table {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%; /* Ajusta a largura da tabela para ocupar 100% da largura do container */
+  }
+
+  th, td {
+    box-sizing: border-box; /* Evita que a largura seja afetada por padding ou bordas */
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  /* Estilos para telas maiores, como tablets */
+  video {
+      max-width: 80%; /* Ajuste conforme necessário */
+      margin: 0 auto; /* Centralizar o vídeo */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilos para telas maiores, como tablets */
+  video {
+      max-width: 60%; /* Ajuste conforme necessário */
+  }
+}
+
+/* Estilizando o tooltip */
+.tooltip-trigger {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.tooltip-trigger:hover .tooltip-content {
+  display: block;
+}
+
+

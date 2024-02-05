@@ -1,0 +1,476 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');*/
+
+/* .bar {
+    width: 100%;
+    height: 20px;
+    background-color: red;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .bar .mensagem {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+   */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #F6F9FF;
+
+}
+
+.cima h1{
+    font-size:45px;
+    color:#27461f;
+    width: 100px;
+    margin-left: -200px;
+    /* line-height:42px; */
+    border-bottom: 3px solid #27461f;
+    /* position: absolute; */
+    /* left: 800px; */
+}
+
+.cima h2{
+    border-bottom: 3px solid #27461f;
+    width: 300px;
+    /* left:695px; */
+    top: 250px;
+    /* left: 700px; */
+}
+
+.cima{
+    margin-top: 200px;
+}
+
+/* .cima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+/*.box-texto h1:before{
+    position: absolute;
+    /* content: ""; 
+    border-bottom: 3px solid #27461f;
+    width: 100px;
+    left:800px;
+}*/
+
+
+h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card1{
+    position: relative;
+    background-color: #000000;
+    width: 500px;
+    border-radius: 5px 5px 15px 15px;
+    height: 300px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+
+
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.logos{
+    position: relative;
+    width: 50%;
+    margin-bottom: 60px;
+    margin-left: -160px;
+    margin-top: -5px;
+}
+.terabyte
+{
+    position: relative;
+    left: -80px;
+    top: -20px;
+    width: 70%;
+}
+
+/*.hidden-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /* width: 100%; 
+    padding: 20px;
+    background-color: #27461f;
+    color: #000000;
+    transform: translateY(-30%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease; /* Adicionando a propriedade opacity à transição 
+    opacity: 0; /* Inicialmente, o texto está invisível 
+    /* display: none; 
+    border-radius: 5px;
+  }
+  
+  .card1:hover .hidden-text {
+    transform: translateY(0);
+    opacity: 1;
+    background-color: #000000;
+  }*/
+
+.card1 h3{
+    position: relative;
+    /* left: 900px;
+    top: 450px;*/
+    font-size: 40px; 
+    margin-top: -60px;
+    margin-left: 290px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card1 h2{
+    color: rgb(20, 115, 10);
+}
+
+.vertical-bar {
+    position: relative;
+    width: 10px;
+    height: 114px;
+    background-color: #ffffff;
+    transform: rotate(7deg); /* Inclinação de 45 graus para a direita */
+    top: -113.60px;
+    right: -250px;
+}
+
+/* .arrow-down {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid mediumspringgreen;
+    top: -200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover .arrow-down{
+    transform: rotate(180deg); /* Rotaciona a seta para cima ao passar o mouse 
+    top: -130px;
+} */
+
+/* .divisao{
+    position: relative;
+    border-top: 3px dotted  #ffffff;
+    top: -206px;
+} */
+
+
+
+.pontos
+{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+.barra
+{
+    background-color: #8f918f;
+    position: relative;
+    width: 390px;
+    height: 10px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: -40px;
+}
+
+#send_point
+{
+    display: none;
+}
+
+.troca1
+{
+    margin-top: 150px;
+    width: 25%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: aqua;
+}
+
+.confirm 
+{
+    display: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(8px); /* Adiciona o efeito de desfoque ao corpo da página */
+}
+
+.confirm h1 {
+    margin-top: 10%;
+  }
+  .confirm p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .confirm input 
+  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .enviar, .nao {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .enviar button:hover {
+    background-color: #45a049;
+  }
+  
+  .nao[type="button"] {
+    background-color: #f44336;
+  }
+  
+  .nao[type="button"]:hover {
+    background-color: #d32f2f;
+  }
+
+
+  .enviar:hover {
+    background-color: #45a049;
+  }
+  
+  .nao[type="button"] {
+    background-color: #f44336;
+  }
+  
+  .nao[type="button"]:hover {
+    background-color: #d32f2f;
+  }
+
+/* .cima{
+    display: flex;
+}
+
+.card1{
+    display: flex;
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .cima h1{
+        margin-right: 10px;
+        display: flex;
+        font-size: 40px;
+    }
+
+    .cima h2{
+        margin-left: 20px;
+        width: 400px;
+        font-size: 25px;
+    }
+
+    .card1{
+        margin-left: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cima {
+        padding: 10px;
+    }
+}
+
+/* Media Query para laptops e dispositivos maiores */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Adapte os estilos conforme necessário para laptops */
+}
+
+/* Media Query para desktops e dispositivos grandes */
+@media only screen and (min-width: 1280px) {
+    /* Adapte os estilos conforme necessário para desktops */
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#progresso1
+{
+    border-radius: 20px;
+    position: absolute;
+    background-color: #27461f;
+    width: 0%;
+    height: 10px;
+}
+
+#progresso2
+{
+    border-radius: 20px;
+    position: absolute;
+    background-color: transparent;
+    width: 0%;
+    height: 10px;   
+}
+#progresso3
+{
+    border-radius: 20px;
+    position: absolute;
+    background-color: transparent;
+    width: 0%;
+    height: 10px;   
+    
+}
+.centralizar
+{
+    
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.adquirirButton 
+{
+    margin-top: -95px;
+}
+
+.adquirirButton button
+{
+    background-color: #27461f;
+    border-radius: 5px;
+    color: #F6F9FF;
+    border: none;
+    height: 35px;
+    width: 200px;
+}
+
+.insuficiente
+{
+    display: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 28%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(8px); /* Adiciona o efeito de desfoque ao corpo da página */
+}
+
+.insuficiente h1
+{
+    margin-top: 20%;
+}
+
+.fechar_insuficiente img
+{
+    
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 2%;
+    right: 2%;
+}
+
+.sucesso
+{
+    display: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 39%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(8px); /* Adiciona o efeito de desfoque ao corpo da página */
+}
+
+#code
+{
+    color: white;
+    background-color: blue;
+    width: 50%;
+    border-radius: 4px;
+    margin: auto;
+}
+
+#code
+{
+    font-size:xx-large;
+}
+
+.areaCode
+{
+    background-color: #727dcb;
+    padding: 8%;
+    margin-top: 100px;
+}

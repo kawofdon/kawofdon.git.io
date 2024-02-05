@@ -1,0 +1,35 @@
+.steps {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    width: 200px;
+    margin: 40px;
+    padding: 20px;
+    border: transparent;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição para cor de fundo e texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionado sombra para iluminação */
+  }
+  
+  .step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s, transform 0.3s, filter 0.3s; /* Adicionado efeito de transição para cor de fundo, escala e filtro de cor */
+  }
+  
+  .step:hover {
+    background-color: #13b8bb;
+    color: #fff;
+  }
+  
+  .step:hover img {
+    transform: scale(1.2);
+    filter: brightness(0); /* Torna a imagem completamente branca */
+  }
+  

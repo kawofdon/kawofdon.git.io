@@ -1,0 +1,226 @@
+/*FONTER*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+
+.form-l-c {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* height: 100vh; */
+   margin: 0;
+   padding: 5px;
+   margin-top: -20%;
+} 
+
+.form-l-c p{
+   margin-top: 20%;
+   margin-left: 7%;
+   margin-bottom: -5%;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+}
+
+.form-l-c a{
+   color:#138d46;
+}
+
+.fundo{
+   background: black;
+}
+
+.form-container{
+   margin-left: -30%;
+}
+
+#loginForm h3{
+   margin-left: 40%;
+}
+
+#cadastroForm h3{
+   margin-left: 30%;
+}
+
+
+
+.form-container-l-c{
+   padding-left: 40px;
+   padding-right: 40px;
+   border-radius: 5px;
+   margin: 0;
+   padding-bottom: 40px;
+   padding-top: 40px;
+   width: 80%;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   margin-left: 200px;
+   margin-bottom: 5px;
+   background-color: white;
+}
+
+
+
+#loginForm p{
+    text-align: center;
+}
+
+#cadastroForm p{
+    text-align: center;
+}
+
+
+
+
+/* .senha{
+    margin-bottom: -40px;
+} */
+
+
+input[type="email"],[type="password"],[type="text"] {
+   border-color: #01fd6a;
+   width: 100%;
+   height: 40px;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   font-size: 15px;
+
+}
+
+
+input[type="email"],[type="password"],[type="text"]:focus{
+   /* border-left: none;
+   border-right: none;
+   border-top: none; */
+   outline: none;
+   
+   
+}
+
+input[type="submit"] {
+   margin-top: -5%;
+   width: 100%;
+   height: 40px;
+   cursor: pointer;
+   background: none;
+   border-color :#138d46;
+   font-weight: bold;
+   color: #138d46;
+   border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+   background-color: #138d46;
+   border: none;
+   color: white;
+}
+
+h3{
+   margin-bottom: 12%;
+   margin-left: 4%;
+   text-transform: uppercase;
+   font-family: 'DM Sans', sans-serif;
+   font-size: 20px;
+}
+
+#btn-ntc{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+    color:#138d46;
+    
+}
+
+#btn-tc{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+    color:#138d46;
+}
+
+#btn-es{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+    color:#138d46;
+
+}
+
+
+
+
+.error-message{
+   position: absolute;
+   background: none;
+   top: 15%;
+   left: 39%;
+   width: 22%;
+   text-align: center;
+   height: 50px;
+   border-radius: 5px;
+   animation: shake 0.5s;
+   cursor: default;
+   color: red;
+   font-family: 'Roboto', sans-serif;
+   border: red 2px solid;
+   border-left: 50px red solid;
+   font-weight: bold;
+   height: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.sucesso-message1{
+   position: absolute;
+   background: none;
+   top: 30%;
+   left: 37%;
+   width: 22%;
+   text-align: center;
+   height: 72px;
+   border-radius: 5px;
+   animation: shake 0.5s;
+   cursor: default;
+   color: green;
+   font-family: 'Roboto', sans-serif;
+   border: green 2px solid;
+   border-left: 50px green solid;
+   font-weight: bold;
+}
+
+/* Define a animação de tremor */
+@keyframes shake {
+   0%, 100% {
+       transform: translateX(0);
+   }
+   10%, 30%, 50%, 70%, 90% {
+       transform: translateX(-10px);
+   }
+   20%, 40%, 60%, 80% {
+       transform: translateX(10px);
+   }
+}
+
+.campo-obrigatorio.campo-invalido {
+   border-color: red; /* Muda a cor da borda para vermelho quando o campo obrigatório não é preenchido */
+}
+
+input{
+   display: block;
+}
+
+#esqueceu-senha{
+   margin-bottom: 10%;
+   position: relative;
+   margin-top: 5%;
+}
+
+.btn-cadastrar{
+   margin-top: -50%;
+   background-color: black;
+}

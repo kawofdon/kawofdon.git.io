@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@400;500&display=swap');
+
+/* FAQ */
+
+#drop{
+  margin-top:120px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.separar{
+	font-family: 'Roboto', sans-serif;
+	background-color: #027b9a;
+  }
+  .wrapper {
+	max-width: 75%;
+	margin: auto;
+  
+  }
+  
+  .wrapper > p,
+  .wrapper > h1 {
+  
+	text-align: center;
+	color: #f1f7f5;
+  }
+  
+  .wrapper > h1 {
+	letter-spacing: 3px;
+	color: #f1f7f5;
+  }
+  
+  .accordion {
+
+	background-color: white;
+	color: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 2rem 2.5rem;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+   
+  }
+  
+  .accordion i {
+	font-size: 1.6rem;
+  }
+  
+  .active,
+  .accordion:hover {
+	background-color: #f1f7f5;
+  }
+  .pannel {
+	padding: 0 2rem 2.5rem 2rem;
+	background-color: white;
+	overflow: hidden;
+	background-color: #f1f7f5;
+	display: none;
+  }
+  .pannel p {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.2rem;
+	line-height: 1.4;
+  }
+  
+  .faq {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 10px 0;
+  }
+  .faq.active {
+	border: none;
+  }
+
+  img{
+	overflow:hidden;
+	height:550px;
+	width:100%;
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+
+    /* Redefinição de estilos para dispositivos móveis */
+    
+    .container {
+        padding: 0 15px 30px;
+    }
+
+    .section1 h1 {
+        font-size: 30px;
+    }
+
+    .section2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .section2 .col2 {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .section2 .sec2contactform textarea {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*	CONTATO */
+* {
+  margin:0px;
+  padding:0px;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+.separar2{
+  background: #ffffff;
+  color: #333;
+  font-weight: normal;
+  font-size: 1em;
+
+}
+
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+  outline: none;
+}
+::-moz-placeholder {
+  color: #666;
+  font-weight: 300;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+  font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+  padding: 0 50px 70px;
+}
+.textcenter {
+  text-align: center;
+}
+.section1 {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+.section1 .shtext {
+  display: block;
+  margin-top: 20px;
+}
+.section1 .seperator {
+  border-bottom:1px solid #a2a2a2;
+  width: 35px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.section1 h1 {
+  font-size: 40px;
+  color:  #13b8bb;
+  font-weight: normal;
+}
+
+.section2 {
+  width: 1200px;
+  margin: 25px auto;
+}
+.section2 .col2 {
+  width: 48.71%;
+  height: 48.71%;
+}
+.section2 .col2.first {
+  float: left;
+}
+.section2 .col2.last {
+  float: right;
+}
+.section2 .col2.column2 {
+  padding: 0 30px;
+}
+.section2 span.collig {
+  color: #a2a2a2;
+  margin-right: 10px;
+  display: inline-block;
+}
+.section2 .sec2addr {
+  display: block;
+  line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+  margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+  padding: 18px;
+  border: 0;
+  background: #EDEDED;
+  margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+  width: 100%;
+  display: block;
+  color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+  padding: 15px 40px;
+  color: #fff;
+  border: 0;
+  background:  #13b8bb;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 7px 0;
+  cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+  font-weight: normal;
+  margin: 20px 0;
+  margin-top: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 19px;
+  color: #A44DD8;
+}
+
+
+
+/* @media querries */
+
+@media screen and (max-width: 768px) {
+
+  /* Redefinição de estilos para dispositivos móveis */
+  
+  .container {
+	  padding: 0 15px 30px;
+  }
+
+  .section1 h1 {
+	  font-size: 30px;
+  }
+
+  .section2 {
+	  width: 100%;
+	  margin: 0 auto;
+  }
+  
+  .section2 .col2 {
+	  width: 100%;
+	  margin: 15px 0;
+  }
+
+  .section2 .sec2contactform textarea {
+	  width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 15%;
+  }
+
+}
+
+
+
+
+
+
+
+/* mapa */
+@media screen and (max-width: 768px) {
+	.anchototal .row .column-12.google-maps iframe {
+	  height: 350px; /* Ajuste a altura desejada para dispositivos móveis */
+	}
+  }

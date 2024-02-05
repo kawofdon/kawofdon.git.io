@@ -1,0 +1,122 @@
+.minha-div {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    color: aqua;
+  }
+
+  /* Media Query para telas menores que 600 pixels */
+  @media screen and (max-width: 600px) {
+    .minha-div {
+      background-color: lightcoral;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .minha-div {
+      background-color: rgb(101, 168, 20);
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .areaCode
+    {
+      margin-top: 50px;
+    }
+    .card1
+    {
+        width: 350px;
+        height: 380px;
+
+    }
+
+    .card1 h3
+    {
+        margin-top: -150px;
+        margin-left: 250px;
+
+    }
+    .confirm
+    {
+      width: 80%;
+      height: 36%;
+    }
+    .insuficiente
+    {
+      width: 80%;
+      height: 36%;
+    }
+    .sucesso
+    {
+      width: 80%;
+      height: 36%;
+    }
+    .logos
+    {
+      margin-bottom: 0;
+    }
+    .card1 h2
+    {
+        margin-top: 70px;
+    }
+    .barra
+    {
+        width: 300px;
+        margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .areaCode
+    {
+      margin-top: 50px;
+    }
+    .confirm
+    {
+      width: 60%;
+    }
+    .insuficiente
+    {
+      width: 60%;
+    }
+    .sucesso
+    {
+      width: 60%;
+      height: 40%;
+      
+    }
+    .logos
+    {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .areaCode
+    {
+      margin-top: 50px;
+    }
+    .confirm
+    {
+      width: 80%;
+      height: 38%;
+    }
+    .insuficiente
+    {
+      width: 80%;
+      height: 38%;
+    }
+    .sucesso
+    {
+      width: 80%;
+      height: 55%;
+    }
+    .logos
+    {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    
+  }
